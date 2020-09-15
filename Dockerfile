@@ -16,7 +16,8 @@ RUN curl -k https://dl.google.com/linux/direct/google-chrome-stable_current_amd6
 RUN dpkg -i chrome.deb || apt-get install -yf
 RUN rm chrome.deb
 
-RUN curl -k https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip -o /root/chromedriver_linux64.zip
+RUN curl -k https://chromedriver.storage.googleapis.com/85.0.4183.87/chromedriver_linux64.zip -o /root/chromedriver_linux64.zip
+# RUN curl -k https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip -o /root/chromedriver_linux64.zip
 RUN unzip -d /usr/local/bin /root/chromedriver_linux64.zip
 RUN chmod +x /usr/local/bin/chromedriver
 
