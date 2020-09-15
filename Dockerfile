@@ -7,6 +7,7 @@ RUN apt-get update -y
 RUN apt-get install -y apt-utils --no-install-recommends
 RUN apt-get install -y apt-transport-https
 RUN apt-get install -y curl
+RUN apt-get install -y libglib2.0 libglib2.0-dev
 RUN apt-get install -y unzip
 
 RUN curl -k https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o chrome.deb
